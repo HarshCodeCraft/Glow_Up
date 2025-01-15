@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Up Home</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="stylesheet" href="assets/css/wishlist.css">
+    <link rel="stylesheet" href="assets/css/Cart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/solid.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body>
+     <!-- header start -->
+     <header id="header" class="fixed">
+        <!-- top header -->
+        <div class="top-header">
+            <div class="container">
+                <div class="d-flex gap-2 align-itmes-center justify-content-end">
+                    <div class=" d-flex gap-2 align-itmes-center">
+                        <div class="lang-img-wrapper">
+                            <img src="assets/images/eng-flag.png" class="w-100" alt="">
+                        </div>
+                        <div class="">
+                            <p class="m-0 lang-text">English</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="middle-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <nav class="navbar navbar-expand-lg ">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav gap-3">
+                                    <li class="nav-item"><a href="index.html" class="active nav-link">Home</a>
+                                    <li class="nav-item"><a href="#" class="hover-dropdown nav-link"
+                                            onclick="categoryOpen()">Categories</a>
+                                    <li class="nav-item"><a href="#" class="hover-dropdown nav-link"
+                                            onclick="brandOpen()">Brands</a>
+                                    <li class="nav-item"><a href="#" class="hover-dropdown nav-link">Offers</a>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="d-flex gap-3 justify-content-end">
+                            <div class="search-wrapper" onclick="opensearch()">
+                                <input type="text" class="search border-0 " placeholder="Search">
+                                <div class="search-icon">
+                                    <div class="position-relative w-100 h-100">
+                                        <img src="assets/images/search-normal.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="Wishlist.html"><img src="assets/images/heart.svg" alt=""></a>
+                                <button class="bg-transparent border-0" onclick="my_account()"><img src="assets/images/user.svg" alt=""></button>
+                                <a href="#"><img src="assets/images/bag-2.svg" alt=""></a>
+                            </div>
+                            <!-- my account start -->
+                            <div class="dropdown-show-main" id="dropdown-show">
+                                <div class="dropdown-show">
+                                    <button type="button" id="dropdownMenuButton"
+                                        class="bg-transparent border-0"></button>
+                                    <div class="bg-white user-dropdown show" x-placement="top-start"
+                                        style="top: -10px;">
+                                        <div class="my-account">
+                                            <div class="user-box">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="">
+                                                        <h5 class="text text-white">Shubham saini</h5>
+                                                        <p class="common-small-text">shubhamsaini@gmail.com</p>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <a href="#"
+                                                            class="edit-btn d-block text-decoration-none">Edit</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text fw-semibold mb-3">My Account</h5>
+                                                <div class="list-box-wrapper ">
+                                                    <a href="my_order.html" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/box.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="text-dark">My Order</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/location.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">My address</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/heart-light.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">My Wishlist</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <h5 class="text fw-semibold mb-3">Other</h5>
+                                                <div class="list-box-wrapper ">
+                                                    <a href="my_order.html" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/link-circle.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">Referral Program</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/setting-2.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">Setting</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/file-lines.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">About us</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/file-minus.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">Terms & Conditions</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/call.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">Help & Support</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="list-box text-decoration-none">
+                                                        <div class="icon">
+                                                            <img src="assets/images/file-sheild.svg" alt="">
+                                                        </div>
+                                                        <div class="text-wrapper border-bottom border-2">
+                                                            <p class="">Privacy Policy</p>
+                                                            <i class="fa fa-angle-right"></i>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- my account end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand-section-main " id="brand-slider">
+            <div class="brand-section">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="mt-3 col-md-4 col-lg-4">
+                            <ul class="">
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Maybelline New York</a></li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Lakme</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Nykaa Cosmetic</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">M.A.C</a></li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">The Face Shop </a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">L'Oreal Paris</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Glow Up Naturals</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Biotique</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Huada Beauty</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Kama Ayurveda</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">Innisfree</a> </li>
+                                <li class=""><a href="" class=" hover-dropdown brand-link">The Body Shop</a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 col-12 col-lg-8 h-100 pb-4">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/wishcare-v1.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Maybelline1211.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Lakme.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/mac.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/lorealparis.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/huda-beauty.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Biotique_new.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/FacesCanadaa.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/TFS-logo-1.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/colorbar-logoforui.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/nyx_New.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/LOTUS-HERBALS.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/niveaa.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/clinique.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/neutrogena.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Estee-Lauder.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Olay_logos.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/kay-beauty.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/Herbal-Essences.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 h-fit">
+                                    <a href="">
+                                        <div class="brand-img-wrapper">
+                                            <img src="assets/images/wishcare-v1.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- bottom header start -->
+
+        <div class="bottom-header-main bg-white" id="category-header">
+            <div class="bottom-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <nav class="navbar navbar-expand-lg ">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav gap-3">
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Makeup</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Skincare</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Haircare</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Fragrance</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Wellness</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Men</a>
+                                        <li class="nav-item hover-dropdown"><a href="#" class=" nav-link">Combo</a>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bottom header end -->
+        </div>
+
+    </header>
+    <!-- header end -->
+
+    <main>
+        <section class="main-content1">
+            <div class="container mt-4">
+                <div class="d-flex gap-4 mt-4">
+                    <div class="fs-6 fw-bold text-capitalize">Your Bag</div>
+                    <div class="fs-6 fw-light">2 Items</div>
+                </div>
+                <div class="row mt-md-0 mt-0 mb-4">
+                    <div class="col-lg-8 col-md-8 col-12">
+                        <div class="bg-white">
+                            <div class="checkout-box border-0 mt-3">
+                                <div class="row">
+                                    <div class="col-md-auto col-4">
+                                        <div class="checkout-box-img">
+                                            <img src="assets/images/face-powder.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-7 px-lf-auto px-md-0">
+                                        <h6 class="checkout-box-head">Sunday Rain</h6>
+                                        <p class="noraml-text">Rose Body Scrub 25ML </p>
+                                        <h5 class="checkbox-price">Sar 130</h5>
+                                        <div class="checkbox-span-text">
+                                            <div class="row mt-3">
+                                                <div class="col-md-8 col-12">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">Size: One Size</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-md-0 mt-4">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">Qty: 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-2 px-2 mb-2 d-flex gap-4">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa fa-trash trash-icon"></i>
+                                        <p class="text">Remove</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-regular fa-heart trash-icon"></i>
+                                        <p class="text">Add To Wishlist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mt-3">
+                            <div class="checkout-box border-0 mt-3">
+                                <div class="row">
+                                    <div class="col-md-auto col-4">
+                                        <div class="checkout-box-img">
+                                            <img src="assets/images/face-powder.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-7 col-7 px-lf-auto px-md-0">
+                                        <h6 class="checkout-box-head">Sunday Rain</h6>
+                                        <p class="noraml-text">Rose Body Scrub 25ML </p>
+                                        <h5 class="checkbox-price">Sar 130</h5>
+                                        <div class="checkbox-span-text">
+                                            <div class="row mt-3">
+                                                <div class="col-md-8 col-12">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">Size: One Size</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-4 col-12 mt-md-0 mt-4">
+                                                    <select name="" class="form-select" id="">
+                                                        <option value="">Qty: 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top mt-4 pt-2 px-2 mb-2 d-flex gap-4">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa fa-trash trash-icon"></i>
+                                        <p class="text">Remove</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <i class="fa-regular fa-heart trash-icon"></i>
+                                        <p class="text">Add To Wishlist</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-12 mx-auto mt-md-5 ">
+                            <button class="common-btn">Continue Shopping</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12 mt-md-0 mt-4">
+                        <h5 class="text fw-bold">Payment Methods</h5>
+                        <div class="d-flex flex-wrap justify-content-around">
+                            <div class="payment-img-wrapper">
+                                <img src="assets/images/Visa2.png" alt="">
+                            </div>
+                            <div class="payment-img-wrapper">
+                                <img src="assets/images/cart2.png" alt="">
+                            </div>
+                            <div class="payment-img-wrapper">
+                                <img src="assets/images/applePay2.png" alt="">
+                            </div>
+                            <div class="payment-img-wrapper">
+                                <img src="assets/images/paypal2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <h5 class="text fw-bold">Price Details</h5>
+                            <div class="checkout-box mt-3 px-3 py-3 bg-white">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="light-text">Subtotal</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="bold-text">SAR 260</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="light-text">Tax</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="bold-text">SAR 60</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="light-text">Grand Total</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="bold-text">SAR 250</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="mb-4">
+                                    <button class="common-btn">Checkout Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- products 1 -->
+    <section class="products">
+        <div class="container mb-5">
+            <div class="products-heading">
+                <h5 class="bold-heading">Suggested items for you</h5>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/mac_stuio_fix.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/concealer.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/glue.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/kerastase.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/mac_stuio_fix.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/concealer.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/glue.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mt-md-0 mt-4">
+                    <div class="common-card">
+                        <div class="heart-icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="common-card-header">
+                            <div class="img-wrapper">
+                                <img src="assets/images/kerastase.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-card-body">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="title">Plum Green</h3>
+                                <p class="price">SAR 162</p>
+                            </div>
+                            <p class="paragraph">Plum green Tea Pore Cleansing Gel Face Wash...</p>
+                            <div class="mt-4">
+                                <div class="review-wrapper">
+                                    <i class="fa fa-star text-warning"></i>
+                                    <span class="review-points">4.9</span>
+                                    <span class="review-text">250+ review</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer start -->
+    <footer>
+        <section class="">
+            <div class="top-footer bg-white py-5">
+                <div class="container mb-5">
+                    <div class="row justify-content-around">
+                        <div class="col-md-3 col-12 mt-md-0 mt-4">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="igm-wrapper">
+                                    <img src="assets/images/bunny.svg" alt="">
+                                </div>
+                                <p class="text">No tests on animals</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 mt-md-0 mt-4">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/leave.svg" alt="">
+                                </div>
+                                <p class="text">No tests on animals</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 mt-md-0 mt-4">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/leaves.svg" alt="">
+                                </div>
+                                <p class="text">No tests on animals</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 mt-md-0 mt-4">
+                            <div class="d-flex gap-3 align-items-center">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/bulp.svg" alt="">
+                                </div>
+                                <p class="text">No tests on animals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-footer position-relative">
+            <div class="">
+                <div class="subscribe mx-auto">
+                    <div class="row">
+                        <div class="col-lg-7  col-md-6">
+                            <div class="d-flex align-items-center w-100 h-parent ">
+                                <div class="">
+                                    <p class="subscribe-heading">Subscribe To Latest Update</p>
+                                    <p class="subscribe-text">Stay Connected For Exclusive Offer & latest update,
+                                        Delivered straight to your inbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="d-flex gap-2 mt-md-4 mt-0 pt-1">
+                                <input type="text" class="subscribe-input" placeholder="Enter Your Email" name="" id="">
+                                <button class="subscribe-btn">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mt-md-4 mt-lg-0 mt-4 col-md-4 ">
+                        <div class="logo-wrapper">
+                            <img src="assets/images/Glow Up.png" alt="">
+                        </div>
+                        <p class="footer-paragraph mt-3">Lorem ipsum dolor sit amet consectetur. Mi
+                            nibh venenatis in suscipit turpis enim cursus
+                            vulputate amet. Lobortis mi platea aliquam
+                            senectus tempus mauris neque.</p>
+                    </div>
+                    <div class="col-lg-2 col-6 mt-md-4  mt-lg-0 mt-4 col-md-2 ">
+                        <div class="">
+                            <div class="footer-heading">
+                                Product
+                            </div>
+                            <ul class="footer-list">
+                                <li><a href="">Makeup</a></li>
+                                <li><a href="">Skincare</a></li>
+                                <li><a href="">Haircare</a></li>
+                                <li><a href="">Fragrance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mt-md-4  mt-lg-0 mt-4 col-md-3 ">
+                        <div class="">
+                            <div class="footer-heading">
+                                Popular Search
+                            </div>
+                            <ul class="footer-list">
+                                <li><a href="">Foundation</a></li>
+                                <li><a href="">Primer</a></li>
+                                <li><a href="">Eyeliner</a></li>
+                                <li><a href="">Lipstick</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 mt-md-4 mt-lg-0 mt-4 col-md-3 ">
+                        <div class="">
+                            <h5 class="footer-heading">Experience App On Mobile</h5>
+                        </div>
+                        <div class="d-flex gap-md-3 gap-1 mt-4">
+                            <a href="" class="download-link">
+                                <img src="assets/images/google.png" alt="">
+                            </a>
+                            <a href="" class="download-link">
+                                <img src="assets/images/google.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 border-top">
+                    <p class="end-footer-text">© 2024 Glow Up. All Rights Reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer end  -->
+
+    <!-- script start  -->
+    <script>
+
+        function brandOpen() {
+            var x = document.getElementById("brand-slider")
+            x.classList.toggle("brand-section-open");
+        }
+        function categoryOpen() {
+            var x = document.getElementById("category-header")
+            x.classList.toggle("bottom-section-open");
+        }
+        function my_account() {
+            var x = document.getElementsByClassName("user-dropdown")[0]
+            x.classList.toggle("dropdown-show-open")
+        }
+    </script>
+    <!-- script closed -->
+</body>
+</html>

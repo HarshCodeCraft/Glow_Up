@@ -1,0 +1,207 @@
+@media (max-width: 1200px) {}
+
+/* small laptop */
+@media (max-width: 1024px) {}
+
+/* tab */
+@media (max-width: 900px) {}
+
+/* phone */
+@media (max-width: 767px) {
+    .fixed {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+    #header{
+        & .top-header{
+            height: 30px;
+            line-height: 30px;
+        }
+        & .middle-header{
+            display: none;
+        }
+        
+    }
+
+    .banner{
+        .dot{
+            width: 4px;
+            height: 4px;
+            margin: 15px 1px;
+        }
+        .actives {
+            background-color: #717171;
+            width: 42px;
+            border-radius: 10px;
+        }
+    }
+
+    .category-slider{
+        & .category-slider-wrapper{
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+             .swiper-container-category {
+                position: relative;
+                padding: 0 2rem;
+                 .swiper-slide {
+                    width: 60.111px !important;
+                    .cate-img-slider-wrapper {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+                & .slider-text {
+                    font-size: 9px;
+                    line-height: 9px;
+                }
+            }
+        }
+    }
+
+    /* .products{
+        & .products-heading{
+            & .bold-heading{
+                font-size: 22px;
+                line-height: 20.6px;
+            }
+            & .light-heading{
+                font-size: 12px;
+                line-height: 19.36px;
+            }
+        }
+        & .common-card{
+            
+            .heart-icon{
+                font-size: 16px;
+                right: 53%;
+            }
+            .common-card-header {
+                width: 50%;
+                height: 150px;
+            }
+            .common-card-body {
+                padding: 0 0;
+                width: 50%;
+                .title{
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+                .price{
+                    font-size: 12px;
+                    line-height: 12px;
+                    right: 50%;
+                }
+                .paragraph{
+                    font-size: 6px;
+                    line-height: 6px;
+                }
+                & .review-wrapper{
+                    padding: 0.20rem .5rem;
+                    i{
+                        font-size: 10px;
+                    }
+                    .review-points{
+                        font-size: 8px;
+                        line-height: 8px;
+                    }
+                    .review-text{
+                        font-size: 8px;
+                        line-height: 8px;
+                    }
+                }
+            }
+        }
+    } */
+
+    .banner2-wrapper{
+        .banner2-light-heading{
+            font-size: 12px;
+            line-height: 12px;
+        }
+        .banner2-bold-heading{
+            font-size: 18px;
+            line-height: 16px;
+        }
+        .banner2-img-wrapper{
+            height: 120px;
+            width: 265px;
+            img{
+                top: -55px;
+            }
+        }
+    }
+
+    .big-section-wrapper{
+        .common-card-body{
+            padding: 1.5rem 0.5rem;
+        }
+    }   
+    
+    .products-tab{
+        .custom-tabs{
+            .nav-item{
+                width: 65px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .subscribe{
+        width: 80%;
+        height: 170px;
+        top: -12%;
+        .subscribe-heading{
+            font-size: 13px;
+            line-height: 38px;
+        }
+        .subscribe-text{
+            font-size: 8px;
+            line-height: 12px;
+        }
+        .subscribe-input{
+            width: 90px;
+            height: 30px;
+            font-size: 8px;
+            padding: 0.9rem 0.5rem;
+            color: #FFFF;
+        }
+        .subscribe-btn{
+            width: 80px;
+            font-size: 9px;
+            height: 10px;
+            line-height: 0;
+            padding: 1.0rem 0.5rem;
+        }
+    }
+    .bottom-footer {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    /* cart page start */
+    .checkout-box{
+        .checkout-box-img{
+            img{
+                width: 100%;
+            }
+        }
+        .checkout-box-head{
+            margin: 0 0;
+        }
+        .checkbox-price{
+            margin-left: -68%;
+        }
+        .checkbox-span-text{
+            margin-left: -68%;
+        }
+        .text{
+            font-size: 10px;
+        }
+    }
+    
+}
